@@ -4,16 +4,16 @@ frontend:
     preBuild:
       commands:
         - corepack enable
-        - corepack prepare pnpm@latest --activate
-        - pnpm install --frozen-lockfile
+        - corepack prepare pnpm@9.15.0 --activate
+        - pnpm config set store-dir .pnpm-store
+        - pnpm install --no-frozen-lockfile --ignore-scripts
     build:
       commands:
-        - pnpm run build
+        - pnpm exec ng build --configuration=production
   artifacts:
     baseDirectory: dist/techmarket-frontend/browser
     files:
       - '*/'
   cache:
     paths:
-      - node_modules/*/
       - .pnpm-store/*/
