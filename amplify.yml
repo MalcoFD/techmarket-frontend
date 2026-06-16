@@ -7,10 +7,13 @@ frontend:
     build:
       commands:
         - npm run build
+        - echo "=== CONTENIDO DIST ===" 
+        - ls -la dist/
+        - ls -la dist/techmarket-frontend/
   artifacts:
     baseDirectory: dist/techmarket-frontend
     files:
-      - '**/*'
+      - '*/'
   cache:
     paths:
       - node_modules/*/
