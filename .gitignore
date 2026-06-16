@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+
+# Artefactos de compilación
+dist/
+dist-server/
+.angular/
+
+# Entornos locales
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/

@@ -1,0 +1,36 @@
+# Dependencias locales (se instalan durante el build)
+node_modules/
+
+# Artefactos de compilación previos
+dist/
+
+# Control de versiones
+.git/
+.gitignore
+
+# Archivos de entorno locales
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tests (no se necesitan en producción)
+*.spec.ts
+e2e/
+
+# Documentación del proyecto (opcional en imagen)
+README.md
+CHANGELOG.md
